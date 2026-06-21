@@ -1,0 +1,21 @@
+# Claus i secrets
+ors_api_key.txt
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Sistema i editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Còpies locals
+app_abans_*.py
+
+# Dades SIG pesades només per a treball local
+dades/
