@@ -914,7 +914,7 @@ else:
     )
     categories_actives_mapa = categories_actives("escenari", CLASSES_ESCENARI)
 
-    if st.sidebar.button("Calcular nou escenari", type="primary", width="stretch"):
+    if st.sidebar.button("Calcular nou escenari", type="primary", use_container_width=True):
         fluxos_ambit = fluxos[fluxos["ambit"] == ambit].dropna(
             subset=["ori_cod", "flux", "temps_ors_min", "lon_origen", "lat_origen"]
         ).copy()
