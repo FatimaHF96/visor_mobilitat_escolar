@@ -1294,9 +1294,9 @@ deck_mapa = pdk.Deck(
 if st.session_state.mapa_ampliat:
     control_superposat_mapa()
     st.pydeck_chart(
-        deck_mapa,
-        width="stretch",
-        height=900,
+    deck_mapa,
+    use_container_width=True,
+    height=900,
     )
     with st.expander("Llegenda i filtres del mapa", expanded=True):
         mostrar_llegenda_mapa()
@@ -1305,9 +1305,9 @@ else:
     with col_mapa:
         control_superposat_mapa()
         st.pydeck_chart(
-            deck_mapa,
-            width="stretch",
-            height=650,
+        deck_mapa,
+        use_container_width=True,
+        height=650,
         )
     with col_llegenda:
         mostrar_llegenda_mapa()
